@@ -1,0 +1,47 @@
+"Ticket","Title","Type","Status","Timestamp","Entry"
+"JML-1001","Examiner finding: terminated employee still enabled","Leaver (Remediation)","Closed","10/7/2026, 1:52:46 PM","Status changed: New to In Progress"
+"JML-1001","Examiner finding: terminated employee still enabled","Leaver (Remediation)","Closed","10/8/2026, 9:22:42 AM","User has been successfully offboarded and account disabled. I discovered they had access to
+1. Bank Users
+2. Loan Files"
+"JML-1001","Examiner finding: terminated employee still enabled","Leaver (Remediation)","Closed","10/8/2026, 9:27:35 AM","Ticket is resolved. Please see the before and after states of this account attached below."
+"JML-1001","Examiner finding: terminated employee still enabled","Leaver (Remediation)","Closed","10/8/2026, 9:27:39 AM","Status changed: In Progress to Resolved"
+"JML-1001","Examiner finding: terminated employee still enabled","Leaver (Remediation)","Closed","10/8/2026, 11:41:25 AM","Status changed: Resolved to Closed"
+"JML-1001","Examiner finding: terminated employee still enabled","Leaver (Remediation)","Closed","RESOLUTION","Ticket is resolved. Please see the before and after states of this account attached below."
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","10/8/2026, 9:33:36 AM","Status changed: New to In Progress"
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","10/8/2026, 9:41:55 AM","Ran a Whatif script to ensure account would be deleted and logs created. This was successful."
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","10/8/2026, 9:42:14 AM","Then did a live script run and successfully offboarded this account."
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","10/8/2026, 9:43:16 AM","See the attached file of this account before and after state."
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","10/8/2026, 9:43:21 AM","Status changed: In Progress to Resolved"
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","10/8/2026, 11:41:29 AM","Status changed: Resolved to Closed"
+"JML-1002","Unowned privileged account: mreynolds","Leaver (Orphan)","Closed","RESOLUTION","See the attached file of this account before and after state."
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","10/7/2026, 10:41:37 AM","Status changed: New to In Progress"
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","10/7/2026, 10:55:24 AM","There are 15 enabled accounts that belong to people. HR says they still work here."
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","10/7/2026, 10:56:17 AM","There are 26 accounts that have a password that never expires."
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","10/7/2026, 10:59:29 AM","The following accounts have domain admin. 1 is a service account and the other is the DC admin.
+
+Administrator   Administrator 
+Marcus Reynolds mreynolds     
+scanner         scanner  
+
+Marcus Reynolds is the only person on this list who has domain admin. He has no HR record."
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","10/7/2026, 1:24:37 PM","Status changed: In Progress to Resolved"
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","10/8/2026, 11:41:33 AM","Status changed: Resolved to Closed"
+"JML-1003","Directory cleanup and the Domain Admin question","Remediation","Closed","RESOLUTION","Issue resolved, please see notes."
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","10/8/2026, 10:25:17 AM","Status changed: New to In Progress"
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","10/8/2026, 10:39:39 AM","I went into her properities, added various informations:
+1. Created account
+2. Created Temp password
+3. Added her manager
+4. Added her to teller role"
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","10/8/2026, 10:39:48 AM","Onboarding complete"
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","10/8/2026, 10:39:51 AM","Status changed: In Progress to Resolved"
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","10/8/2026, 11:40:53 AM","Please check notes for reference"
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","10/8/2026, 11:41:21 AM","Status changed: Resolved to Closed"
+"JML-1004","New hire: Nadia Brooks, Teller, Elm Street","Joiner","Closed","RESOLUTION","Please check notes for reference"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","10/8/2026, 10:41:23 AM","Status changed: New to In Progress"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","10/8/2026, 10:45:27 AM","I removed Janet from Teller role, adding her to her new role"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","10/8/2026, 10:46:28 AM","Ran validator script to ensure success of transition"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","10/8/2026, 10:46:39 AM","Resolved! Please see notes attached"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","10/8/2026, 10:46:42 AM","Status changed: In Progress to Resolved"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","10/8/2026, 11:41:26 AM","Status changed: Resolved to Closed"
+"JML-1005","Role change: Janet Ruiz, Teller to Loan Processor","Mover","Closed","RESOLUTION","Please check notes for reference"
