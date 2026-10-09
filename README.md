@@ -45,8 +45,7 @@ I migrated every surviving account with PowerShell, populating required attribut
 
 **Caught privilege creep in progress.** Processed a role change by adding the new role exactly as requested. The old role was still attached, so I removed it. Requests tell you what to add and never what to remove.
 
-The step I would do differently next time is
-<!-- FILL IN: finish it. What would you change about your order of work, or what took longer than it should have? -->
+The step I would do differently next time is validate each PowerShell change in Active Directory before moving on to the next task. During the project, there was a script that stated an account was disabled, but during verification I noticed it was still enabled. Verifying the change immediately would have allowed me to catch the issue earlier and prevented me from assuming the change had been successfully completed.
 
 ---
 
@@ -70,19 +69,17 @@ Windows Server, Active Directory Domain Services, PowerShell, Group Policy Manag
 ## What I Learned
 
 **Disable, never delete.**
-Every account has a hidden identifier called a SID (Security Identifier), and file permissions, mailbox rights and audit log entries all point at that SID rather than at the name. Delete the account and
-<!-- FILL IN: finish the thought. What breaks? What happens if you recreate an account with the same name? -->
+Every account has a hidden identifier called a SID (Security Identifier), and file permissions, mailbox rights and audit log entries all point at that SID rather than to the name. Delete the account and the SID goes with it. This breaks the connection to anything (documents and files) tied to the identity. If you attempt to recreate an account with the same name, a new SID is granted, so the original permissions and access do not carry over.
 
 **Access belongs on groups, not people.**
-A permission granted directly to a user works, but it never shows up in a group membership report, which means
-<!-- FILL IN: finish it. What can the bank no longer answer? Tie it back to the examiners' question. -->
+A permission granted directly to a user works, but it never shows up in a group membership report, which means the bank can't answer who has access and why. Assigning access through role-based groups creates a connection between a user's job role and the allowed permissions.
 
 **A mover is two operations.**
-The request asked me to give her loan processing access. It never mentioned removing her teller access, and
-<!-- FILL IN: finish it. What happens if you only do the half you were asked for? What is that called? -->
+The request asked me to give her loan processing access. It never mentioned removing her teller access, and if I had only added the new loan processing access, she would still have access to her teller role, which is not needed anymore. This is privilege creep and violates the principle of least privilege. A role change means adding the access needed for the new role and removing access that is no longer needed.
 
-<!-- FILL IN: Add one of your own in the same shape, a bolded line and two or three sentences.
-     Pick whatever genuinely got you: the thing that took longest, the mistake you made, or the moment something clicked. -->
+**Identity decisions need an authoritative source.**
+Comparing Active Directory against the HR roster showed me why I should not decide whether an account belongs only based on what I see. Looking at both together helped me identify which accounts should remain active, go through the leaver process, or be disabled.
+
 
 ---
 
