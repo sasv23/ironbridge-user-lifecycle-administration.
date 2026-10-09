@@ -19,8 +19,7 @@ What I inherited: every account in one flat container with no organizational uni
 
 The bank could not answer the examiners' question: who has access, and why.
 
-The first thing I noticed when I opened the directory was how difficult it was to tell who should have access and why. Active employees, terminated users, service accounts, and unknown accounts were mixed together with no clear structure, which showed me that access had not been consistently managed as people joined, changed roles, or left the bank.
-<!-- FILL IN: finish the sentence. What actually stood out, and what did it tell you about how the place had been run? -->
+The first thing I noticed when I opened the directory was how difficult it was to tell who should have access and why. Active employees, terminated users, service accounts, and unknown accounts were mixed with no clear structure, which showed me that access had not been consistently managed as people joined, changed roles, or left the bank. Once I compared Active Directory against the roster, I was able to see the impact more clearly. Some accounts had no matching HR record, a terminated employee was still enabled months after they were offboarded, and a privileged access existed without a clear business justification.
 
 ---
 
